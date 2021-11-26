@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+ <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+     android:id="@+id/id_recycler_message"
+     android:layout_width="match_parent"
+     tools:listitem="@layout/user_message"
+     android:layout_height="wrap_content"
+     android:nestedScrollingEnabled="true"
+     app:shimmer_demo_layout="@layout/shimmer_layout"
+     app:shimmer_demo_child_count="10"
+     app:shimmer_demo_grid_child_count="1"
+     app:shimmer_demo_layout_manager_type="linear_vertical"
+     app:shimmer_demo_angle="20"
+     />
+    </ScrollView>
+
+</LinearLayout>
